@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: hutao
+      POSTGRES_PASSWORD: hutao
+      POSTGRES_DB: hutao
+    ports:
+      - "5432:5432"
